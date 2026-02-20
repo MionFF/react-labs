@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .header {
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #333;
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav {
+        display: flex;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">ReactLabs</div>
+
+      <nav class="center">
+        <ul class="nav">
+          <li>Home</li>
+          <li>Labs</li>
+          <li>Mini</li>
+        </ul>
+      </nav>
+
+      <div class="right">
+        <button>New</button>
+        <div class="avatar">D</div>
+      </div>
+    </header>
+  </body>
+</html>

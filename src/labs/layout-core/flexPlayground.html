@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Playground</title>
+
+    <style>
+      .play {
+        display: grid;
+        gap: 12px;
+        padding: 12px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+        border: 1px solid #999;
+        height: 72px;
+        padding: 8px;
+      }
+      .box {
+        width: 44px;
+        height: 44px;
+        border: 1px solid #333;
+        display: grid;
+        place-items: center;
+      }
+      .r3 .box {
+        width: auto;
+        flex-basis: 0;
+      }
+      .r1 {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+      }
+      .r2 {
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+      }
+      .grow1 {
+        flex: 1;
+      }
+      .grow2 {
+        flex: 2;
+      }
+      .grow3 {
+        flex: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="play">
+      <div class="row r1">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+      </div>
+
+      <div class="row r2">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+      </div>
+
+      <div class="row r3">
+        <div class="box grow1">1</div>
+        <div class="box grow2">2</div>
+        <div class="box grow3">3</div>
+      </div>
+    </div>
+  </body>
+</html>
