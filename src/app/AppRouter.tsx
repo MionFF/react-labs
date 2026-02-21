@@ -2,27 +2,21 @@
 // import RenderExperiment from '../labs/render-models/RenderExperiment'
 // import { RenderCommitLab } from '../labs/render-models/RenderCommitLab'
 
-// import StopwatchAutoStart from '../mini-products/stopwatch/StopwatchAutoStart'
+import { ModalLab } from '../mini-products/a11y/ModalLab'
 
-import DashboardTW from '../labs/layout-tw/DashboartTW'
+// import { LoginForm } from '../mini-products/a11y/LoginForm'
 
-// import { BadSideEffectLab } from '../labs/render-models/BadSideEffectLab'
+// import DashboardTW from '../labs/layout-tw/DashboartTW'
+// import LoginForm from '../mini-products/a11y/LoginForm'
 
 export function AppRouter() {
   // const [view, setView] = useState('render')
 
   return (
-    <div>
-      {/* <nav>
-        <button onClick={() => setView('render')}>Render Model</button>
-      </nav>
-
-      {view === 'render' && <RenderExperiment />} */}
-
-      {/* <RenderCommitLab /> */}
-      {/* <BadSideEffectLab /> */}
-      {/* <StopwatchAutoStart /> */}
-      <DashboardTW />
+    <div className='min-h-screen flex justify-center items-center'>
+      {/* <DashboardTW /> */}
+      {/* <LoginForm /> */}
+      <ModalLab />
     </div>
   )
 }
