@@ -1,22 +1,12 @@
-// import { useState } from 'react'
-// import RenderExperiment from '../labs/render-models/RenderExperiment'
-// import { RenderCommitLab } from '../labs/render-models/RenderCommitLab'
+// import NotesWithFilter from '../mini-products/notes/NotesWithFilter'
 
-import { ModalLab } from '../mini-products/a11y/ModalLab'
-
-// import { LoginForm } from '../mini-products/a11y/LoginForm'
-
-// import DashboardTW from '../labs/layout-tw/DashboartTW'
-// import LoginForm from '../mini-products/a11y/LoginForm'
+import UserCard from '../labs/effects/UserCard'
 
 export function AppRouter() {
-  // const [view, setView] = useState('render')
-
   return (
     <div className='min-h-screen flex justify-center items-center'>
-      {/* <DashboardTW /> */}
-      {/* <LoginForm /> */}
-      <ModalLab />
+      {/* <NotesWithFilter /> */}
+      <UserCard userId='1' />
     </div>
   )
 }
