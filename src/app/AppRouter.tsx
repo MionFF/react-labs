@@ -1,12 +1,14 @@
 // import NotesWithFilter from '../mini-products/notes/NotesWithFilter'
 
-import UserCard from '../labs/effects/UserCard'
+import Dashboard from '../mini-products/FilterableDashboard/FilterableDashboard'
+
+// Wrap centered:
+{
+  /* <div className='min-h-screen flex justify-center items-center'>
+  
+</div> */
+}
 
 export function AppRouter() {
-  return (
-    <div className='min-h-screen flex justify-center items-center'>
-      {/* <NotesWithFilter /> */}
-      <UserCard userId='1' />
-    </div>
-  )
+  return <Dashboard />
 }
