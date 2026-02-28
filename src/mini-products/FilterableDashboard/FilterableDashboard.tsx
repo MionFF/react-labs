@@ -1,6 +1,8 @@
 import { useCallback, useMemo, useState } from 'react'
-import { UserCard } from './UserCard'
 import type { User } from './types'
+import FilterPanel from './FilterPanel'
+import UsersList from './UsersList'
+import EmptyState from './EmptyState'
 
 function generateUsers(count: number): User[] {
   const result = []
@@ -45,51 +47,31 @@ export default function Dashboard() {
     return [...pinnedTop, ...rest]
   }, [users, query, pinnedIds])
 
+  const visibleUsers = useMemo(() => {
+    return sortedUsers.map(u => ({
+      ...u,
+      pinned: pinnedIds.has(u.id),
+    }))
+  }, [pinnedIds, sortedUsers])
+
+  const emptyMessage = users.length ? 'No results found' : 'No users found'
+
   console.count('Dashboard')
 
   return (
     <div className='min-h-screen bg-[var(--bg-primary)] text-[var(--color)]'>
-      <div
-        id='input-session'
-        className='flex flex-col p-4 bg-[var(--bg-secondary)] border border-[var(--border)]'
-      >
-        <label htmlFor='filter'>Filter: </label>
-        <input
-          type='search'
-          name='filter'
-          id='filter'
-          placeholder='Type a name...'
-          className='my-2 outline-none ring-2 ring-[var(--border)]'
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-        />
-        <p>You're searching for: {query.trim() ? query : '...'}</p>
-      </div>
+      <FilterPanel query={query} onQueryChange={setQuery} />
 
-      <ul id='list' className='p-4 bg-[var(--bg-primary)] border border-[var(--border)]'>
-        {users.length ? (
-          sortedUsers.length ? (
-            sortedUsers.map(user => (
-              <UserCard
-                key={user.id}
-                id={user.id}
-                name={user.name}
-                score={user.score}
-                pinned={pinnedIds.has(user.id)}
-                onTogglePin={togglePin}
-              />
-            ))
-          ) : (
-            <li role='status' aria-live='polite'>
-              No results found
-            </li>
-          )
+      {/* <UsersList users={visibleUsers} onTogglePin={togglePin} /> */}
+      {users.length ? (
+        visibleUsers.length ? (
+          <UsersList users={visibleUsers} onTogglePin={togglePin} emptyMessage={emptyMessage} />
         ) : (
-          <li role='status' aria-live='polite'>
-            No users found
-          </li>
-        )}
-      </ul>
+          <EmptyState message='No results found' />
+        )
+      ) : (
+        <EmptyState message='No users found' />
+      )}
     </div>
   )
 }
