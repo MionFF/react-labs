@@ -1,6 +1,6 @@
 // import NotesWithFilter from '../mini-products/notes/NotesWithFilter'
 
-import Dashboard from '../mini-products/FilterableDashboard/FilterableDashboard'
+import NotesBoard from '../mini-products/NotesBoardV2/NotesBoard'
 
 // Wrap centered:
 {
@@ -10,5 +10,5 @@ import Dashboard from '../mini-products/FilterableDashboard/FilterableDashboard'
 }
 
 export function AppRouter() {
-  return <Dashboard />
+  return <NotesBoard />
 }
