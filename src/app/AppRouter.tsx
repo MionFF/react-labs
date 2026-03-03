@@ -1,6 +1,6 @@
 // import NotesWithFilter from '../mini-products/notes/NotesWithFilter'
 
-import NotesBoard from '../mini-products/NotesBoardV2/NotesBoard'
+import RequestSimulator from '../mini-products/RequestSimulator/RequestSimulator'
 
 // Wrap centered:
 {
@@ -10,5 +10,5 @@ import NotesBoard from '../mini-products/NotesBoardV2/NotesBoard'
 }
 
 export function AppRouter() {
-  return <NotesBoard />
+  return <RequestSimulator />
 }
