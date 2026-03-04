@@ -1,6 +1,6 @@
 // import NotesWithFilter from '../mini-products/notes/NotesWithFilter'
 
-import RequestSimulator from '../mini-products/RequestSimulator/RequestSimulator'
+import KeyDrill from '../labs/keys/KeyDrill'
 
 // Wrap centered:
 {
@@ -10,5 +10,5 @@ import RequestSimulator from '../mini-products/RequestSimulator/RequestSimulator
 }
 
 export function AppRouter() {
-  return <RequestSimulator />
+  return <KeyDrill />
 }
