@@ -1,6 +1,6 @@
 // import NotesWithFilter from '../mini-products/notes/NotesWithFilter'
 
-import KeyDrill from '../labs/keys/KeyDrill'
+import App from '../labs/context/ProviderPlacementLab/App'
 
 // Wrap centered:
 {
@@ -10,5 +10,5 @@ import KeyDrill from '../labs/keys/KeyDrill'
 }
 
 export function AppRouter() {
-  return <KeyDrill />
+  return <App />
 }
