@@ -1,6 +1,4 @@
-// import NotesWithFilter from '../mini-products/notes/NotesWithFilter'
-
-import App from '../labs/context/ProviderPlacementLab/App'
+import VirtualizedSearch from '../mini-products/VirtualizedSearch/VirtualizedSearch'
 
 // Wrap centered:
 {
@@ -10,5 +8,5 @@ import App from '../labs/context/ProviderPlacementLab/App'
 }
 
 export function AppRouter() {
-  return <App />
+  return <VirtualizedSearch />
 }
