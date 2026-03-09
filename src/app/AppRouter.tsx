@@ -1,4 +1,4 @@
-import VirtualizedSearch from '../mini-products/VirtualizedSearch/VirtualizedSearch'
+import SearchHistoryDemo from '../mini-products/SearchHistoryStore/SearchHistoryDemo'
 
 // Wrap centered:
 {
@@ -8,5 +8,5 @@ import VirtualizedSearch from '../mini-products/VirtualizedSearch/VirtualizedSea
 }
 
 export function AppRouter() {
-  return <VirtualizedSearch />
+  return <SearchHistoryDemo />
 }
