@@ -1,4 +1,4 @@
-import SearchHistoryDemo from '../mini-products/SearchHistoryStore/SearchHistoryDemo'
+import SearchPage from '../mini-products/SearchExplorer/SearchPage'
 
 // Wrap centered:
 {
@@ -8,5 +8,5 @@ import SearchHistoryDemo from '../mini-products/SearchHistoryStore/SearchHistory
 }
 
 export function AppRouter() {
-  return <SearchHistoryDemo />
+  return <SearchPage />
 }
