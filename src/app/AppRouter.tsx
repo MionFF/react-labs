@@ -1,4 +1,4 @@
-import SearchPage from '../mini-products/SearchExplorer/SearchPage'
+import ContactsForm from '../mini-products/ContractsForm/ContractsForm'
 
 // Wrap centered:
 {
@@ -8,5 +8,5 @@ import SearchPage from '../mini-products/SearchExplorer/SearchPage'
 }
 
 export function AppRouter() {
-  return <SearchPage />
+  return <ContactsForm />
 }
