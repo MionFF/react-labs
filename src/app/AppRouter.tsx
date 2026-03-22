@@ -1,4 +1,4 @@
-import ContactsForm from '../mini-products/ContractsForm/ContractsForm'
+import PostsManager from '../mini-products/TQ/PostsManager/PostsManager'
 
 // Wrap centered:
 {
@@ -8,5 +8,5 @@ import ContactsForm from '../mini-products/ContractsForm/ContractsForm'
 }
 
 export function AppRouter() {
-  return <ContactsForm />
+  return <PostsManager />
 }
