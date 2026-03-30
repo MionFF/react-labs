@@ -1,4 +1,4 @@
-import PostsManager from '../mini-products/TQ/PostsManager/PostsManager'
+import CatalogApp from '../mini-products/react-router/Catalog/CatalogApp'
 
 // Wrap centered:
 {
@@ -8,5 +8,5 @@ import PostsManager from '../mini-products/TQ/PostsManager/PostsManager'
 }
 
 export function AppRouter() {
-  return <PostsManager />
+  return <CatalogApp />
 }
