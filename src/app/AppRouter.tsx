@@ -1,4 +1,4 @@
-import CatalogApp from '../mini-products/react-router/Catalog/CatalogApp'
+import UserDirectoryPage from '../labs/testing/integration/UserDirectoryPage/UserDirectoryPage'
 
 // Wrap centered:
 {
@@ -8,5 +8,5 @@ import CatalogApp from '../mini-products/react-router/Catalog/CatalogApp'
 }
 
 export function AppRouter() {
-  return <CatalogApp />
+  return <UserDirectoryPage />
 }
