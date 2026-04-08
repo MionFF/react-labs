@@ -34,9 +34,6 @@ describe('UserDirectoryPage', () => {
   afterEach(() => jest.clearAllMocks())
 
   test('initial state', () => {
-    const mockedSearchUsers = searchUsers as jest.MockedFunction<typeof searchUsers>
-    mockedSearchUsers.mockResolvedValue([])
-
     renderWithClient(<UserDirectoryPage />, { route: '/users' })
 
     expect(screen.getByRole('heading', { name: 'User Directory' })).toBeInTheDocument()
@@ -46,6 +43,8 @@ describe('UserDirectoryPage', () => {
     expect(screen.getByText('Enter a search query')).toBeInTheDocument()
     expect(screen.queryByRole('list', { name: 'Users list' })).not.toBeInTheDocument()
   })
+
+  test('')
 
   test('searches user and renders list on button click', async () => {
     const user = userEvent.setup()

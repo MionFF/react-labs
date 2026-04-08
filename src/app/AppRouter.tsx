@@ -1,4 +1,6 @@
-import UserDirectoryPage from '../labs/testing/integration/UserDirectoryPage/UserDirectoryPage'
+// import CheckoutApp from '../labs/testing/E2E/reference-examples/CheckoutApp/CheckoutApp'
+
+import SignupApp from '../labs/testing/E2E/reference-examples/SignupApp/SignupApp'
 
 // Wrap centered:
 {
@@ -8,5 +10,5 @@ import UserDirectoryPage from '../labs/testing/integration/UserDirectoryPage/Use
 }
 
 export function AppRouter() {
-  return <UserDirectoryPage />
+  return <SignupApp />
 }

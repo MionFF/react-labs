@@ -7,6 +7,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "types": ["node"],
+    "ignoreDeprecations": "6.0",
     // "types": ["jest", "@testing-library/jest-dom", "node"],
 
     /* For best modules readability */
@@ -40,6 +41,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "playwright.config.ts", "tests/**/*.ts"]
   // "include": ["src", "src/jest-setup.d.ts"]
 }
